@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="get">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="nombre">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+            <br>
+            <br>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña">
+            <br>
+            <br>
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha">
+            <br>
+            <br>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" min="18" max="120" value="18">
+            <br>
+            <br>
+            <label for="genero">Género: </label>
+            <input type="radio" name="genero" id="genero"> Masculino
+            <input type="radio" name="genero" id="genero"> Femenino
+            <input type="radio" name="genero" id="genero"> Otro
+            <br>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias</legend>
+            <label for="intereses">Intereses (selecciona todos los que apliquen).</label>
+            <label for="intereses">Género: </label>
+            <br>
+            <input type="radio" name="intereses" id="intereses"> Deportes
+            <input type="radio" name="intereses" id="intereses"> Música
+            <input type="radio" name="intereses" id="intereses"> Lectura
+            <input type="radio" name="intereses" id="intereses"> Viajes
+            <br>
+            <br>
+            <label for="pais">País de residencia: </label>
+            <select id="pais" name="pais">
+                <option value="españa">España</option>
+                <option value="mexico">México</option>
+                <option value="argentina">Argentina</option>
+                <option value="clombia">Colombia</option>
+                <option value="peru">Perú</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Dirección en internet</legend>
+            <label for="dirección">Dirección IPv4:</label>
+            <br> <input type="text" name="dirección" id="direccion" pattern="^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"  required>
+        </fieldset>
+        <fieldset>
+            <legend>Información Adicional</legend>
+            <label for="comentario">Comentarios: </label>
+            <br>
+            <textarea rows="4" cols="50" id="comentario"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reiniciar</button>
+    </form>
+</body>
+</html>
